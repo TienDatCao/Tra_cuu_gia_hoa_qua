@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Giá hoa quả</h1>
+    <input type="text" id="hoa_qua">
+    <button type="submit" onclick="giaHoaQua()">Xem giá</button>
+    <h4 id="gia"></h4>
+</body>
+</html>
+<script>
+    function giaHoaQua() {
+        let a = document.getElementById("hoa_qua").value;
+        let b = document.getElementById("gia");
+        switch (a) {
+            case "Ổi":
+                b.innerText = "20000 VNĐ/kg";
+                break;
+            case "Dưa Hấu":
+                b.innerText = "20000 VNĐ/kg";
+                break;
+            case "Táo":
+                b.innerText = "30000 VNĐ/kg";
+                break;
+            case "Xoài":
+                b.innerText = "30000 VNĐ/kg";
+                break;
+            case "Cam":
+                b.innerText = "40000 VNĐ/kg";
+                break;
+            case "Chôm Chôm":
+                b.innerText = "40000 VNĐ/kg";
+                break;
+            case "Măng Cụt":
+                b.innerText = "50000 VNĐ/kg";
+                break;
+            default:
+                b.innerText = "";
+                break;
+        }
+    }
+</script>
